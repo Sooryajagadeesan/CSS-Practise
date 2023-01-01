@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        .container{
+            counter-reset: section;
+            background-color: coral;
+        }
+        .container h2::before {
+            counter-increment: section;
+            content : "Section " counter(section) ": "
+        }
+        h2 {
+            font-size: 30px;
+        }
+        #last-para {
+            text-align: left;
+        }
+        #last-para::before {
+            counter-increment: section;
+            content : "Section " counter(section) ": "
+        }
+        .innerCounter {
+            counter-reset: section2;
+            background-color: greenyellow;
+        }
+        .innerCounter h2::before {
+            counter-increment: section2;
+            content : "Slot " counter(section2) ": "
+        }
+        .subsection{
+            counter-reset: subSection;
+        }
+        .innerCounter h3::before {
+            counter-increment: subSection;
+            content : counter(section2) "." counter(subSection) ": "
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Counters</h1>
+    <p>CSS Counters are like variables and are used to count the occurance of an element in the HTML document. They can be used to given section numbers.</p>
+    <p>Elements numbered using CSS Counters</p>
+    <div class="container">
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>Javascript</h2>
+        <p id="last-para">This para is also counted</p>
+    </div>
+    <hr><br>
+    <div class="innerCounter">
+        <div class="subsection">
+            <h2>BreakFast Dishes</h2>
+            <h3>Idly</h3>
+            <h3>Dosa</h3>
+            <h3>Poori</h3>
+            <h3>Pongal</h3>
+        </div>
+        <div class="subsection">
+            <h2>Lunch Dishes</h2>
+            <h3>Sambhar Rice</h3>
+            <h3>Lemon Rice</h3>
+            <h3>Curd Rice</h3>
+        </div>
+        <div class="subsection">
+            <h2>Dinner Dishes</h2>
+            <h3>Noodles</h3>
+            <h3>Dosa</h3>
+            <h3>Idly</h3>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

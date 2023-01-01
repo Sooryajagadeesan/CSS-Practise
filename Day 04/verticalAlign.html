@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Vertical Alignment</title>
+    <style>
+        * {
+            font-family: serif;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            font-family: monospace;
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: square;
+            width: 30%;
+            margin: auto auto 10px auto;
+        }
+        #padding {
+            background-color: salmon;
+            width: 50%;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 100px 0;
+        }
+        #line-height{
+            background-color: skyblue;
+            width: 50%;
+            height:300px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        #line-height p {
+            line-height: 300px;
+        }
+        #flex {
+            display: flex;
+            width: 50%;
+            margin: auto;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(181, 46, 46);
+            color: snow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Vertical Alignment</h1>
+    <p>There are many ways to align an element vertically, a few of them are</p>
+    <ul>
+        <li>Using top and bottom padding with equal values</li>
+        <li>Using Line height property set to height of the element</li>
+        <li>Using Flex Box</li>
+    </ul>
+    <p id="padding">Using Padding (top & bottom with same values)</p>
+    <div id="line-height">
+        <p>Using Line height property set to the element's height</p>
+    </div>
+    <div id="flex">
+        <p>Using Flex-Box.</p>
+    </div>
+</body>
+</html>

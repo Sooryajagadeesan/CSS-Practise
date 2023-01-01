@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Outlines</title>
+    <style>
+        * {
+            font-family: monospace;
+            text-align: center;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 30px;
+        }
+        #container {
+            width: 100%;
+            height: 200px;
+            background-color: khaki;
+            margin-top: 30px; /*TO avoid overwriting the sibling's content*/
+            outline: 10px solid red;
+            border: 5px solid orange;
+            box-sizing: border-box; /*TO have the border,padding,margin and also outline within the element's width*/
+        }
+        small {
+            font-size: 20px;
+        }
+        .outline-offset {
+            outline-offset: 10px;
+            width: 70%;
+            margin: auto;
+            outline: 15px solid indigo;
+            border: 5px solid orangered;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Outlines</h1>
+    <p>Outlines are lines that are drwan outside of the border of an element.</p>
+    <small>NOTE : Eventhough the borders are not set, the outline will take its presence surrounding the element, This is still an ouline but it may look like a border. Important point is that outlines don't take part in the content area but they overwrite upon the sibling elements. To avoid the overwriting we can use margins...!</small>
+
+    <div id="container">
+        <p>I am a container with <q>red</q> outline.</p>
+    </div>
+    <div id="container2" class="outline-offset">
+        <p>I am a container with <q>indigo</q> outline with offset.</p>
+    </div>
+    <h2>TAKE CARE OF THE OVERWRITING !!!!!!!</h2>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Image</title>
+    <style>
+        * {
+            font-family: monospace;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        #container {
+            width: 400px;
+            height: auto;
+            text-align: center;
+            background-color: pink;
+            padding: 200px 0;
+            font-size: 20px;
+            margin: auto;
+    /* THIS LINE IS VVVVVVV IMPORTANT for the border-image to work */
+            border: 10px solid transparent; 
+            border-image: url("boderU.png") 30 round;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Border Image</h1>
+    <p>We can set the images as borders for an element using <q>border-image</q> property.</p>
+    <div id="container">Hai I have an image border !</div>
+</body>
+</html>

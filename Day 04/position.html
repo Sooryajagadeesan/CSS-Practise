@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Position Prperty</title>
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 30px;
+        }
+        h1 {
+            font-size:50px;
+        }
+        .container {
+            position: relative;
+            width: 70%;
+            height: 900px;
+            margin: 10% 15%;
+            background-color: #8aaebd;
+        }
+        #box-normal {
+            border: 5px solid purple;
+        }
+        #box-1 {
+            border: 5px solid indigo;
+            position: relative;
+            left: 50px;
+        }
+        #box-2 {
+            border: 5px solid olive;
+            position: absolute;
+            top: 500px;
+
+        }
+        #box-3 {
+            border: 5px solid hotpink;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        #box-4 {
+            border: 5px solid blue;
+            position: sticky;
+            top: 0;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position Property</h1>
+    <div class="container">
+        <div id="box-normal">This is positioned according to the normal flow of the document (static)</div>
+        <div id="box-1">This is positioned relative (relative)</div>
+        <div id="box-2">This is positioned absolute with reference to the immediate parent (absolute)</div>
+        <div id="box-3">This is fixed at a position (fixed)</div>
+        <div id="box-4">This is sticky. Its is initially placed as as per the normal flow but when scrolled it will get sticked at one position. Please scroll to see the effect.</div>
+    </div>
+</body>
+</html>

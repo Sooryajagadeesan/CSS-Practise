@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator for Adjacent SIBLING</title>
+    <style>
+        h1 {
+            font-size: 50px;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        p {
+            font-size: 30px;
+            color: rgb(207, 12, 221);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div + p {
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Combinators - Adjacent Sibiling</h1>
+    <p>The Selectors are combined by a '+' plus symbol</p>
+    <p>This selects only the first sibling from the given selector (top-botom approach).</p>
+    <div>
+        
+    </div>
+    <p>HI I am the 1<sup>st</sup> adjacent sibling of div element</p>
+    <p>HI I am the 2<sup>nd</sup> sibling of div element</p>
+    <p>HI I am the 3<sup>rd</sup> sibling of div element</p>
+</body>
+</html>

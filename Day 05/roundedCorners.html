@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Rounded Corners</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        #container {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            display: inline-block;
+            border-radius: 50px;
+        }
+        #container2 {
+            width: 400px;
+            height: 400px;
+            background-color: hotpink;
+            float: right;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+        #container p {
+            line-height: 350px;
+        }
+        #container2 p {
+            line-height: 350px;
+        }
+        small {
+            font-size: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Rounded Corners</h1>
+    <p>Rounded Corners can be achieved through <q>border-radius</q> property. Rounded corners creates a good impression on our elements.</p>
+    <small>NOTE: That border-radius works even on the absence of border property.</small>
+    <div id="container"><p>Rounded Corners</p></div>
+    <div id="container2"><p>Rounded Corners</p></div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 25px;
+        }
+        .container1 {
+            background-color: thistle;
+            width: 100%;
+        }
+        #left {
+            background-color: tomato;
+            float: left;
+            width: 200px;
+            height: 300px;
+            padding: 0;
+            margin: 0;
+        }
+        #second-left {
+            float: left;
+            background-color: rgb(147, 242, 243);
+            width: 500px;
+            margin: 0;
+        }
+        #clear {
+            clear: left;
+        }
+        pre {
+            margin: 0;
+            font-size: 20px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Float</h1>
+    <p>To get a good looking layout we have to move some elements from its normal flow. Float moves an element either to left or to right and gives a good looking layout. </p>
+    <div class="container1">
+        <p id="left">This is floating left.</p>
+        <p id="second-left">Lorem ipsum dolor sit amet Lorem ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, magnam nisi! Quo modi quisquam distinctio deserunt maxime excepturi enim odio impedit, ratione sit, porro sint! Eius tempora molestias iusto. Doloribus.</p>
+    </div>
+    <div class="container2">
+        <p>Hi, I am para tag inside another container, My sibling's float property affects me tooooooo, TO OVERCOME THIS we have to set the <strong><q>clear</q></strong> property !!!!!!! See how my next sibling para is placed.</p>
+        <p id="clear">
+            Hi I used <strong><q>clear</q></strong> property to get me out of that <q>float effect !</q>, all other elemets that follow me will be safe from that float effect.
+        </p>
+    </div>
+    <pre>Now a days, we use,
+containerThatContainsFloatedElements :: after {
+    content : "";      
+    clear : both;
+    display : table;
+}
+        
+to safe guard the other elements from this effect
+    </pre>
+    
+</body>
+</html>

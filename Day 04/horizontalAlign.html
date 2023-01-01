@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Horizontal Alignment</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        h1 {
+            font-family: monospace;
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        ul {
+            list-style-type :square;
+            width:15%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: salmon;
+        }
+        #text-align {
+            text-align: center;
+            background-color: khaki;
+        }
+        #width {
+            width:50%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lightgrey;
+        }
+        .container {
+            width: 100%;
+            position: relative;
+            background-color: linen;
+        }
+        #position {
+            position: absolute;
+            right: 0;
+            background-color: pink;
+        }
+        #float {
+            float: left;
+            background-color: plum;
+        }
+        /* #position {
+
+        }
+        #float {}  */
+    </style>
+</head>
+<body>
+    <h1>CSS Horizontal Alignment</h1>
+    <p>There are many ways to align an element horizontally,</p>
+    <ul>
+        <li>Using text-align</li>
+        <li>Using widthand margins</li>
+        <li>Using position property</li>
+        <li>Using float property</li>
+    </ul>
+    <p id="text-align">using text-align property</p>
+    <p id="width">using width and margin properties</p>
+    <div class="container position">
+        <p id="position">using position property</p>
+    </div>
+    <div class="container float">
+        <p id="float">using float property</p>
+    </div>
+</body>
+</html>

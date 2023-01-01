@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        a {
+            font-size: 20px;
+        }
+
+        a:link {
+            color: limegreen;
+        }
+        a:visited {
+            color: orangered;
+        }
+        a:hover {
+            background-color: orchid;
+        }
+        a:active{
+            color: purple;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        p{
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button {
+            background-color: orchid;
+            font-size: 30px;
+            border:none;
+            color: white;
+            padding: 5px 10px;
+            font-family: monospace;
+            border-radius: 30px;
+            transition: 0.4s;
+        }
+
+        button:hover {
+            background-color: indigo;
+            color: ivory;
+        }
+        input {
+            width: 300px;
+            height: 25px;
+        }
+
+        input:focus{
+            background-color: yellow;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class Selectors</h1>
+    <p>The syntax of pseudo class selectors is SELECTOR:pseudoClassName</p>
+    <a href="">This is an Unvisited Link</a> <br>
+    <a href="">This is a Visited Link</a> <br>
+    <a href="">Hover me please...</a> <br>
+    <a href="">This is the selected link</a> <br>
+    <br>
+    <button>Hover me</button><br><br>
+    Name : <input type="text" placeholder="Focus me">
+</body>
+</html>

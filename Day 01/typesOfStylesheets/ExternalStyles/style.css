@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(238, 222, 248);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: monospace;
+    text-align: center;
+    color: indigo;
+}
+
+p {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(121, 9, 201);
+}

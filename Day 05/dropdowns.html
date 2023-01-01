@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdowns</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        #nav-list {
+            background-color: rgb(181, 140, 211);
+            list-style-type: none;
+        }
+        #nav-list > li {
+            float: left;
+            width: 25%;
+            background-color: rgb(124, 154, 111);
+            text-align: center;
+        }
+        .nav-links {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 5px;
+            color: indigo;
+        }
+        #nav-list>li:hover {
+            background-color: indigo;
+            
+        }
+        #nav-list>li:hover .nav-links{
+            color: white;
+        }
+        .dropdown {
+            list-style-type: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown li {
+            width: 100%;
+            background-color: lavender;
+        }
+        .dropdown li:hover {
+            background-color: rgb(92, 92, 204);
+        }
+        .dropdown li:hover .dropdown-link{
+            color: ivory;
+        }
+        .dropdown a {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px 5px;
+        }
+        .services {
+            display: none;
+        }
+        .info{
+            display: none;
+        }
+        #services-item:hover .services{
+            display: block;
+        }
+        #info-item:hover .info {
+            display: block;
+        }
+        small {
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dropdowns</h1>
+    <p>Dropdowns are used in the nav bars to get a good user experience.</p>
+    <small>NOTE: Hover on the tabs to see the dropdown.</small>
+    <ul id="nav-list">
+        <li><a href="" class="nav-links">Home</a></li>
+        <li id="services-item">
+            <a href="" class="nav-links">Services</a>
+            <ul class="dropdown services">
+                <li><a href="" class="dropdown-link">Our Products</a></li>
+                <li><a href="" class="dropdown-link">Our Services</a></li>
+            </ul>
+        </li>
+        <li id="info-item"><a href="" class="nav-links">Info</a>
+            <ul class="dropdown info">
+                <li><a href="" class="dropdown-link">About Us</a></li>
+                <li><a href="" class="dropdown-link">Contact Us</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

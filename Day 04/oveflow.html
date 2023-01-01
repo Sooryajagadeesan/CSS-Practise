@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 25px;
+            text-align: center;
+        }
+        body {
+            background-color: rgb(201, 184, 201);
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+
+        }
+        .container {
+            width:200px;
+            height:200px;
+            background-color: rgb(68, 17, 117);
+            color: white;
+            margin: auto auto 100px auto;
+        }
+        small {
+            font-size: 20px;
+        }
+        .visible {
+            /* DEFAULT value */
+            overflow: visible;
+        }
+        .hidden {
+            overflow: hidden;
+        }
+        .scroll {
+            overflow: scroll;
+        }
+        .auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Overflow</h1>
+    <p>When the content of an element overflows the defined boundaries we can handle them with the overflow property.</p>
+    <p>overflow-x and overflow-y properties are used tohandle the overflows only in a specific direction.</p>
+    <small>NOTE: The difference between overflow values scroll and auto is that scroll adds both (vertical and horizontal scroll bars) whereas auto adds only that is necessary.</small>
+    <h2>overflow : visible;</h2>
+    <div class="container visible">This is a container of some text and it exceeds the predefined area. Here the overflow is visible.</div>
+    <h2>overflow : hidden;</h2>
+    <div class="container hidden">This is a container of some text and it exceeds the predefined area. Here the overflow is hidden.</div>
+    <h2>overflow : scroll; (both vertical and horizontal scroll bars are included)</h2>
+    <div class="container scroll">This is a container of some text and it exceeds the predefined area. Here the overflow is adjusted with a scroll bar.</div>
+    <h2>overflow : auto; (only required scroll bar is included)</h2>
+    <div class="container auto">This is a container of some text and it exceeds the predefined area. Here also the overflow is adjusted with ascroll bar.</div>
+</body>
+</html>

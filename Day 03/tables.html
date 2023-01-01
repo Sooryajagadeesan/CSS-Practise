@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        table,td,th {
+            border : 2px solid magenta;
+            border-collapse: collapse;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            caption-side: bottom;
+        }
+        td,th {
+            font-size: 20px;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(230, 173, 230);
+        }
+        caption {
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <p>Table borders, border-collapses, table widths, zebra stripes effect can be made here in CSS.</p>
+    <table>
+        <caption>Course Tracker</caption>
+        <tr>
+            <th>Name</th>
+            <th>HTML</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>Soorya</td>
+            <td>Completed</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Dhoni</td>
+            <td>Completed</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Ruturaj</td>
+            <td>Completed</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Jadeja</td>
+            <td>Completed</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Moen</td>
+            <td>Completed</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>D.Chahar</td>
+            <td>Completed</td>
+            <td>Completed</td>
+        </tr>
+    </table>
+</body>
+</html>

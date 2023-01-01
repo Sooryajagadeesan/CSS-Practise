@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text</title>
+    <style>
+    
+        * {
+            font-family: monospace;
+            text-align: center;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 30px;
+        }
+        #color {
+            color: rgb(247, 19, 224);
+        }
+        #bgcolor {
+            background-color: khaki;
+        }
+        #decoration {
+            text-decoration: line-through;
+        }
+        #transform {
+            text-transform: uppercase;
+        }
+        #align {
+            text-align: right;
+        }
+        #indent {
+            text-align: initial;
+            text-indent : 100px;
+            max-width: 100%;
+        } 
+        #shadowed-text {
+            text-shadow: 3px 3px magenta;
+            font-size: 40px;
+        }
+        #shadowed-text-blur {
+            text-shadow: 3px 3px 5px magenta;
+            font-size: 40px;
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Text</h1>
+    <p id="color">Text color</p>
+    <p id="bgcolor">Text Background Color</p>
+    <p id="decoration">Striked Text</p>
+    <p id="transform">this text is initially lower cased and is now Upper cased using text-decoration property</p>
+    <p id="align">Right Aligned Text</p>
+    <p id="indent">This text is indented only in the first line, this is insanely great !!, """some lines to get the effect of a long paragrapgh to see the effect of text-indent <q>only on the first line</q></p>
+    <p id="shadowed-text">This is a shadowed text</p>
+    <p id="shadowed-text-blur">This is a shadowed text with blur</p>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        .gallery {
+            width:80%;
+            margin: 50px auto;
+            background-color: blueviolet;
+
+        }
+        .container {
+            width: 20%;
+            background-color: burlywood;
+            float: left;
+            border: 5px solid black;
+            height: 400px;
+            padding-top: 30px;
+            margin: 5px;
+
+        }
+        .container img {
+
+            padding: 5px;
+        }
+        #description {
+            font-size: 25px;
+        }
+        
+        
+        @media screen and (max-width: 1023px) {
+            .container {
+                width: 100%;
+            }
+
+        }
+        
+        @media screen and (max-width: 1024px) {
+            .container {
+                width: 50%;
+                margin: auto;
+            }
+            img {
+                width: 50%;
+                margin: 0 25%;
+                padding: 0;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <p>A Cluster of images are displayed here.</p>
+    <div class="gallery">
+        <div class="container">
+            <img src="https://pngimg.com/uploads/mario/mario_PNG125.png" width="200" height="200" alt="instagram image">
+            <p id="description">I am Mario and I am flying nowwww.</p>
+        </div>
+        <div class="container">
+            <img src="https://purepng.com/public/uploads/large/purepng.com-mario-runningmariofictional-charactervideo-gamefranchisenintendodesigner-1701528634473reyw1.png" width="200" height="200" alt="instagram image">
+            <p id="description">I am Mario and I am welcoming you.</p>
+        </div>
+        <div class="container">
+            <img src="https://purepng.com/public/uploads/large/purepng.com-mario-brosmariofictional-charactervideo-gamefranchisenintendodesigner-17015286315852qvna.png" width="200" height="200" alt="instagram image">
+            <p id="description">I am Mario and I am running nowwww.</p>
+        </div>
+        <div class="container">
+            <img src="https://assets.webiconspng.com/uploads/2017/09/Mario-PNG-Image-99723.png" width="200" height="200" alt="instagram image">
+            <p id="description">I am Mario and I am flying like a super-man.</p>
+        </div>
+    </div>
+</body>
+</html>

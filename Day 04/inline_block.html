@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inline-Block</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-family: monospace;
+            font-size: 50px;
+        }
+        p {
+            font-size: 25px;
+        }
+        #inline {
+/* NOTE: the width has no effect */
+            width:300px;
+            background-color: chocolate;
+            color: ivory;
+            font-size: 30px;
+        }
+        #inline-block {
+            display: inline-block;
+            width: 500px;
+            background-color: chocolate;
+            color: ivory;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Inline-Block</h1>
+    <p>The <q>display : inline-block;</q> makes an inline element to have the characteristics of a block level element but is still  displayed as an inline element.</p>
+    <p>The main difference between an <strong>inline and inline-block</strong> is <strong>we cannot set top/bottom margins and padding, width and height but we can set them in inline-block.</strong> </p>
+    <p>The main difference between an <strong>block and inline-block</strong> is <strong>block elements are displayed each on a line whereas in inline-block elements are displayed on the same line.</strong> </p>
+    <p>An inline element whose width cannot be changed,</p><span id="inline">Inline</span>
+    <p>An inline-block element whose width can be changed,</p><span id="inline-block">Inline-Block</span>
+</body>
+</html>

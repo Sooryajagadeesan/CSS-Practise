@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Opacity</title>
+    <style>
+        * {
+            font-family: monospace;
+            font-size: 25px;
+            text-align: center;
+        }
+        body {
+            background-color: rgb(201, 184, 201);
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+
+        }
+        #container {
+            width: 70%;
+            margin: auto;
+            margin-top: 10px;
+            padding: 50px 10px;
+            text-align: center;
+            background-color: indigo;
+            opacity: 0.7;
+        }
+        #container2 {
+            
+            width: 70%;
+            margin: auto;
+            margin-top: 10px;
+            padding: 50px 10px;
+            text-align: center;
+            background-color:rgba(73, 13, 117,0.6);
+            /* background-color: rgb(73, 13, 117); */
+
+        }
+        h3 {
+            font-size: 25px;
+            color: ivory;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Opacity</h1>
+    <p>The Opacity/Transparency determines the visibility of an element. It takes values from 0.0 to 1.0</p>
+    <small>NOTE: All the child elements inside a container with opacity property set will share the opacity of its parent, which makes the text hard to read.</small>
+    <div id="container">
+        <h3>I am a text inside an container having opacity set and so I too have that effect.</h3>
+    </div>
+    <div id="container2">
+        <h3>I am a text inside an container having opacity set using RGBA and so I too have that effect.</h3>
+    </div>
+</body>
+</html>

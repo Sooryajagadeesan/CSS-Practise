@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            font-size: 50px;
+            font-family: monospace;
+        }
+
+        p{
+            font-size: 30px;
+            font-family: monospace;
+        }
+        a {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        a[target] {
+            background-color: cyan;
+        }
+
+        a[target = "_blank"]{
+            background-color: rgb(204, 132, 238);
+        } 
+        a[target = "_self"] {
+            background-color: rgb(194, 142, 194);
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors</h1>
+    <p>Here the elements are selected using attributes or the values of those attributes.</p>
+    <a href="#">This anchor element has no target attribute</a> <br>
+    <a href="#" target = "_blank">This has a target attribute with value = "_blank"</a> <br>
+    <a href="#" target = "_self">This has a target attribute with value = "_self"</a> <br>
+</body>
+</html>
